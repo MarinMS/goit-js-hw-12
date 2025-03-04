@@ -33,7 +33,7 @@ export const renderGallery = async (images, total, reset = false) => {
   const markup = images
     .map(
       image => `
-    <div class="gallery-item">
+    <li class="gallery-item">
       <a href="${image.largeImageURL}">
         <img src="${image.webformatURL}" alt="${image.tags}" />
       </a>
@@ -43,7 +43,7 @@ export const renderGallery = async (images, total, reset = false) => {
         <p>Comments<span>${image.comments}</span></p>
         <p>Downloads<span>${image.downloads}</span></p>
       </div>
-    </div>
+    </li>
   `
     )
     .join('');

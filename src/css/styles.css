@@ -2,6 +2,12 @@
   box-sizing: border-box;
 }
 
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
@@ -11,7 +17,7 @@ body {
   color: #2e2f42;
 }
 
-.search-form {
+.form {
   display: flex;
   gap: 8px;
   margin: 36px auto;
@@ -37,7 +43,7 @@ body {
   outline: none;
 }
 
-.search-form button {
+.form button {
   font-family: 'Montserrat', sans-serif;
   border-radius: 8px;
   padding: 8px 16px;
@@ -53,7 +59,7 @@ body {
   cursor: pointer;
 }
 
-.search-form button:hover {
+.form button:hover {
   background: #6c8cff;
 }
 
